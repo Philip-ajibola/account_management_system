@@ -8,11 +8,11 @@
       <jdbc-url>jdbc:sqlite:C:\Users\Dell\PycharmProjects\djangoProject\accountManagementSystem\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgres@localhost" uuid="37af64b3-35bc-4bc6-af60-08e59e0a03a1">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="@localhost" uuid="fdd6e348-3d27-407c-b910-b995750fc5b6">
+      <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
