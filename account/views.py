@@ -3,18 +3,16 @@ from decimal import Decimal
 
 from django.core.mail import send_mail
 from django.db import transaction
-from django.shortcuts import render, get_object_or_404
-from rest_framework.decorators import api_view
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, CreateAPIView
+from django.shortcuts import get_object_or_404
+from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.permissions import IsAuthenticated
 
 from .models import Account, Transaction
-from .serializers import AccountSerializer, AccountCreateSerializer, WithDrawSerializer, DepositSerializer, \
+from .serializers import AccountCreateSerializer, WithDrawSerializer, DepositSerializer, \
     TransferSerializer, TransactionSerializer
-from rest_framework import status
 
 
 # Create your views here.

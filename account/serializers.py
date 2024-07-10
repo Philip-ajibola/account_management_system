@@ -22,6 +22,7 @@ class WithDrawSerializer(serializers.Serializer):
     amount = serializers.DecimalField(max_digits=16, decimal_places=2)
     pin = serializers.CharField(validators=[MaxLengthValidator(4), MinLengthValidator(4)])
 
+
 class DepositSerializer(serializers.Serializer):
     account_number = serializers.CharField(max_length=10)
     amount = serializers.DecimalField(max_digits=16, decimal_places=2)
